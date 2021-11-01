@@ -38,7 +38,7 @@ jobs:
 
     - name: Build flame
       run: | 
-        docker build . \
+        docker build -f Dockerfile.multiarch . \
         --platform linux/arm/v7,linux/arm64,linux/amd64 \
         --tag ghcr.io/$GITHUB_ACTOR/flame:latest --push
 
