@@ -25,5 +25,6 @@ WORKDIR /app
 EXPOSE 5005
 
 ENV NODE_ENV=production
+RUN node server.js
 
 CMD ["node", "server.js"]
